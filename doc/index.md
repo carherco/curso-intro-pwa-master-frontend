@@ -9,7 +9,7 @@ Contenido del curso
 - Apps vs. Sites
 - Características de las AWP
 
-[Módulo 3: Aplicaciones web instalables](manifest.md)
+[Módulo 2: Aplicaciones web instalables](manifest.md)
 - El archivo manifest
 - Cómo incluir un manifest en nuestra web
 - Propiedades del archivo manifest
@@ -18,24 +18,24 @@ Contenido del curso
 - Desinstalación de la aplicación
 - Compatibilidad en navegadores
 
-[Módulo 4: Service Workers](service_workers.md)
+[Módulo 3: Service Workers](service_workers.md)
 - Qué son los SW
 - Cómo funcionan los SW
 - Cómo registrar un SW
 - Eventos
 
-[Módulo 5: Funcionamiento Offline](offline.md)
+[Módulo 4: Funcionamiento Offline](offline.md)
 - El interfaz NavigatorOnLine
 - La API Fetch
 - La API Cache
 - [Patrones de cacheo](patrones_cacheo.md)
 
-[Módulo 6: Notificaciones](notificaciones.md)
+[Módulo 5: Notificaciones](notificaciones.md)
 - Notificaciones No persistentes
 - Notificaciones Persistentes
 - [Notificaciones Push](notificaciones_push.md)
 
-Módulo 9: Librerías y Herramientas
+Módulo 6: Librerías y Herramientas
 - [Librerías de javascript que implementan AWP](workbox.md)
 - [Herramienta de auditoría Lighthouse de Google](auditoria.md)
 
