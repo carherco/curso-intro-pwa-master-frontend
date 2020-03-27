@@ -1,7 +1,7 @@
 // Solicitar permiso al cargar la página
 document.addEventListener('DOMContentLoaded', function () {
   if (!Notification) {
-    alert('Tu navegador no soporta notificaciones'); 
+    alert('Tu navegador no soporta notificaciones');
     return;
   }
 
@@ -12,18 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js?v=3')
-  .then(function(reg) {
-    // registration worked
-    console.log('Registration succeeded. Scope is ' + reg.scope);
-  }).catch(function(error) {
-    // registration failed
-    console.log('Registration failed with ' + error);
-  });
-}
-
-//Función asociada al botón del html
-function click() {
-
-      window.open("otrapagina.html");      
-
+    .then(function (reg) {
+      // registration worked
+      console.log('Registration succeeded. Scope is ' + reg.scope);
+    }).catch(function (error) {
+      // registration failed
+      console.log('Registration failed with ' + error);
+    });
 }

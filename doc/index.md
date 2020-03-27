@@ -50,8 +50,3 @@ Módulo 6: Librerías y Herramientas
 - [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
 - [Notifications](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
 - [Battery Status](https://w3c.github.io/battery/)
-
-## Mis datos personales
-
-- Carlos Herrera Conejero
-- carherco@gmail.com
