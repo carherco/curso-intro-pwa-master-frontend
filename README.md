@@ -36,7 +36,7 @@ Contenido del curso
 - [Notificaciones Push](./doc/notificaciones_push.md)
 
 Módulo 6: Librerías y Herramientas
-- [Librerías de javascript que implementan AWP](./doc/workbox.md)
+- [Librería Workbox](https://developers.google.com/web/tools/workbox/)
 - [Herramienta de auditoría Lighthouse de Google](./doc/auditoria.md)
 
 ## Enlaces de Interés
