@@ -277,10 +277,9 @@ No podemos elegir cuándo se mostrará al usuario el banner de instalación.
 
 Necesitamos cumplir una serie de requisitos. CADA NAVEGADOR TIENE SUS PROPIAS NORMAS
 
-Google Chrome: https://developers.google.com/web/fundamentals/app-install-banners/
+https://web.dev/install-criteria/
 
 Al instalar la app, es como un acceso directo.
-
 
 ## Eventos
 
