@@ -75,6 +75,8 @@ Una vez instalado, se activa. Si había otro service worker activo, el nuevo deb
 - canmakepayment
 - paymentrequest
 
+https://w3c.github.io/ServiceWorker/#execution-context-events
+
 ## Desisntalar un service worker
 
 Para desinstalar un SW, hay que llamar al método **unregister()** del objeto *registration* correspondiente a nuestro SW. Existe un método **getRegistrations()** que nos devuelve todos los registros existentes.
@@ -105,7 +107,7 @@ navigator.serviceWorker.controller.postMessage("Client 1 says '"+msg+"'");
 
 ## Enlaces de interés
 
-- Documentación: https://www.w3.org/TR/service-workers-1/
+- Documentación: https://w3c.github.io/ServiceWorker/
 - Ciclo de vida: https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
 - Ejemplos: 
   - https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker

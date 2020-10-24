@@ -29,7 +29,6 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/sw-test/',
         '/sw-test/index.html',
         '/sw-test/style.css',
         '/sw-test/app.js',
@@ -48,7 +47,6 @@ this.addEventListener('install', function(event) {
 El listener de *install* SIEMPRE debe llamar a event.waitUntil().
 
 waitUntil necesita una promesa. Cuando se resuelva la promesa el service worker terminará su proceso de instalación.
-
 
 ## Responder con un recurso cacheado
 

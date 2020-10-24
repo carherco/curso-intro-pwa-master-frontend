@@ -7,7 +7,7 @@ Es un archivo con formato json.
 ```json
 {
   "name": "Amazing App",
-  "description": "Esta app hace cosas asombrosas",
+  "description": "Esta app hace cosas lemon-brosas",
   "icons": [{
     "src": "images/icon.png",
     "sizes": "192x192"
@@ -15,9 +15,13 @@ Es un archivo con formato json.
 }
 ```
 
-Definición del estándar: https://www.w3.org/TR/appmanifest (a partir del punto 8 vienen las propiedades).
+![Imagen Banner Instalación](./images/pwa-install-prompt.jpeg)
 
-Compatibilidad en navegadores: https://caniuse.com/#feat=web-app-manifest
+Definición del estándar: https://www.w3.org/TR/appmanifest (a partir del punto 7 vienen las propiedades).
+
+Compatibilidad en navegadores: https://caniuse.com/web-app-manifest
+
+Ejemplos de AWPs: https://github.com/hemanth/awesome-pwa#apps
 
 
 ## Cómo incluir un manifest en nuestra web
@@ -27,10 +31,11 @@ Para incluir un manifest en nuestra web basta con incluir en el head de nuestro 
 ```html
 <!doctype>
 <html>
-<title>Amazing app</title>
+  <head>
+    <title>Amazing app</title>
 
-<!-- link al archivo manifest -->
-<link rel="manifest" href="manifest.webmanifest">
+    <!-- link al archivo manifest -->
+    <link rel="manifest" href="manifest.json">
 ```
 
 ## Propiedades del archivo manifest
@@ -42,7 +47,7 @@ Veamos un ejemplo más elaborado
   "lang": "en",
   "dir": "ltr",
   "name": "Amazing App",
-  "description": "Esta app hace cosas asombrosas",
+  "description": "Esta app hace cosas lemon-brosas",
   "short_name": "Amazing",
   "icons": [{
     "src": "icon/lowres.webp",
@@ -78,7 +83,7 @@ Veamos un ejemplo más elaborado
   "related_applications": [{
     "platform": "play",
     "url": "url/a/la/app",
-    "id": "es.carherco.pwa"
+    "id": "net.lemoncode.pwa"
   }],
   "prefer_related_applications": true
 }
@@ -328,7 +333,7 @@ if(promptEvent !== undefined) {
       } else {
         console.log('User dismissed the A2HS prompt');
       }
-      deferredPrompt = undefined;
+      promptEvent = undefined;
   });
 }
 ```
@@ -356,7 +361,7 @@ Safari en iOS no admite el manifiesto de aplicación web (todavía), por lo que 
 
 Si nos interesa saber en css o en javascript si un usuario ha accedido a la web desde el navegador o haciendo click en el icono de la app instalada, tenemos las técnicas que se cuentan en este enlace:
 
-https://developers.google.com/web/fundamentals/app-install-banners/#detect-mode
+https://web.dev/customize-install/#track-how-the-pwa-was-launched
 
 ## Desinstalación de la app
 
